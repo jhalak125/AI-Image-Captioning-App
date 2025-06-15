@@ -1,5 +1,8 @@
+import os
 import streamlit as st
 from utils.gemini_api import generate_caption  
+
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 st.set_page_config(page_title="PixVerse", page_icon="🧠", layout="centered")
 
